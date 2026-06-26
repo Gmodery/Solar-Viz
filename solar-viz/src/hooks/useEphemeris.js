@@ -24,7 +24,6 @@ export function useEphemeris() {
                     })
                 }
                 setSeriesMap(grouped)
-                console.log('seriesMap keys:', Object.keys(grouped))
                 setLoading(false)
             })
             .catch(err => console.error('Ephemeris fetch failed:', err))

@@ -13,6 +13,7 @@ export default function SolarSystemScene() {
     const { getPosition, loading } = useEphemeris();
     const controlsRef = useRef();
     const sunTexturePath = "/textures/Sun.jpg";
+    const sunRadiusAU = 0.00465047
 
     return (
         <div style={{ width: '100vw', height: '100vh' }}>

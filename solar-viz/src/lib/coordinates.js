@@ -1,5 +1,12 @@
-// How many Three.js scene units = 1 AU (before power curve)
-const AU_SCALE = 40
+export const SCALE_CONFIG = {
+    // How many Three.js scene units = 1 AU (before power curve)
+    AU_SCALE: 100,
+
+    // Planet radius multipliers
+    trueRadiusScale: 1,
+    inflatedRadiusScale: 1200
+    
+}
 
 // Using real scale
 const POWER = 1
@@ -15,5 +22,5 @@ export function scalePosition(pos) {
 export function scaleDistance(au) {
     if (au === 0) return 0
     const sign = au < 0 ? -1 : 1
-    return sign * Math.pow(Math.abs(au), POWER) * AU_SCALE
+    return sign * Math.pow(Math.abs(au), POWER) * SCALE_CONFIG.AU_SCALE
 }

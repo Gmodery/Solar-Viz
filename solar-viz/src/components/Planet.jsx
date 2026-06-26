@@ -28,7 +28,6 @@ export default function Planet({ objectId, radius, color, axialTilt, getPosition
         if (topMeshRef.current) {
             topMeshRef.current.rotation.y += 0.025 * delta;
         }
-
     })
 
 
