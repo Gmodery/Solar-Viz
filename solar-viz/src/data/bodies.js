@@ -5,7 +5,7 @@ const planets = [
         radius: 1,
         color: "#8d8d8d",
         orbit: {
-            a: 0.444,      // semi-major axis (AU)
+            a: 0.427,      // semi-major axis (AU)
             e: 0.2056,     // eccentricity
             i: 7.005,      // inclination (degrees)
             omega: 77.457, // argument of perihelion (degrees)
@@ -20,7 +20,7 @@ const planets = [
         radius: 1.5,
         color: "#e9c551",
         orbit: {
-            a: 0.723,
+            a: 0.726,
             e: 0.0067,
             i: 3.394,      
             omega: 131.602, 
@@ -50,7 +50,7 @@ const planets = [
         radius: 1.2,
         color: "#ca1616",
         orbit: {
-            a: 1.59,      
+            a: 1.585,
             e: 0.0933,     
             i: 1.8496,
             omega: -23.943, 
